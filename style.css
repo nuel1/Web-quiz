@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background: rgb(65, 1, 65);
+    color: #fff;
+    
+}
+
+.page_wrapper{
+    width: 600px;
+    margin: auto;
+}
+
+.quiz_section{
+    display: none;
+    transition: transform 1.3s;
+    transition-delay: 3s;
+}
+
+.intro_container{
+    display: block;
+}
+
+.intro_section{
+    width: 60%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, .3);
+    padding: 20px 15px;
+}
+
+.title h2{
+    font-family: cursive;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+.info p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: .87em;
+    word-spacing: .30em;
+    line-height: 24px;
+}
+
+.info p+p{
+    text-align: center;
+    font-weight: 900;
+}
+
+.main button{
+    padding:10px 15px;
+    font-family: monospace;
+    border: transparent;
+    background: rgb(0, 167, 223);
+    width: 200px;
+    display: block;
+    margin: 15px auto;
+    font-weight: 900;
+    border-radius: 5px;
+    font-size: 1.4em;
+    color: #fff;
+}
+
+.header_title h1{
+    text-align: center;
+    font-family: cursive;
+    font-variant: small-caps;
+    font-size: 3em;
+}
+
+label{
+    display: block;
+    font-family: monospace;
+    color: rgb(0, 191, 255);
+    font-weight: 900;
+    margin: 10px;
+    font-size: 1.1em;
+}
+
+.question_wrapper h3{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    position: relative;
+}
+
+.question_wrapper h3::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url(check.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.time_wrapper{
+    width: 100px;
+    height: 100px;
+    background: rgb(253, 90, 253);
+    position: fixed;
+    right: 20px;
+    top:10%;
+    border-radius: 50%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+}
+
+.time_box{
+    position: relative;
+}
+.time_box span{
+    position: absolute;
+    top: 30px;  
+}
+
+.time_box span:nth-child(1){
+    left: 10px;
+}
+
+.time_box span:nth-child(2){
+    left: 45px;
+    top: 25px;
+}
+
+.time_box span:nth-child(3){
+    left: 55px;
+}
+
+.quiz_section button{
+    background:  rgb(0, 167, 223);
+    padding: 10px 15px;
+    font-family: monospace;
+    font-size: 1.3em;
+    color: #fff;
+    border: transparent;
+    border-radius: 4px;
+    display: block;
+    margin: 30px 0;
+}
+
+.popup_wrapper{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    background: rgba(0, 0, 0, .4);
+    display: grid;
+    place-items: center;
+    display: none;
+}
+
+.score_popup_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:  rgb(7, 138, 182);
+    background: rgb(255, 255, 255   );
+    padding: 20px;
+    font-family: cursive;
+    font-variant: small-caps;
+    position: relative;
+}
+
+.score_popup_box *{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.score_popup_box h1{
+    font-size: 3em;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.score_popup_box h4{
+    font-size: 1.2em;
+}
+
+.score_popup_box span{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    font-size: 5em;
+    color:  rgb(65, 1, 65);
+}
+
+.cancel_icon{
+    position: absolute;
+    font-size: 1.8em;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 5px;
+    right: 15px;
+    cursor: pointer;
+}
+
+
